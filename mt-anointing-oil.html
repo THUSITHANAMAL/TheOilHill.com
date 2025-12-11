@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MT Anointing Oil - In Honor of Myrtle L. Taylor-Walls | The Oil Hill</title>
+    <meta name="description" content="The MT Anointing Oil - A heavenly aroma unlike anything on earth. Biblical spices, Frankincense & Myrrh.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/oil-hill-v2.css">
+</head>
+<body>
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo-circle.png" alt="The Oil Hill" class="logo-img">
+                <div class="logo-text-wrapper">
+                    <span class="logo-title">THE OIL HILL</span>
+                    <span class="logo-tagline">Heaven's point of contact with you</span>
+                </div>
+            </a>
+
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="mt-anointing-oil.html" class="nav-link active">MT Anointing Oil</a>
+                <a href="purposes.html" class="nav-link">Purposes</a>
+                <a href="scriptures.html" class="nav-link">Scriptures</a>
+                <a href="calm-your-mind.html" class="nav-link">Calm Your Mind</a>
+                <a href="all-products.html" class="nav-link">All Products</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="nav-btn cart-btn" onclick="toggleCart()">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"/>
+                        <circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                <button class="hamburger" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Header -->
+    <section class="product-header-section">
+        <div class="container">
+            <div class="product-header-grid">
+                <div class="product-images" data-aos="fade-right">
+                    <div class="main-product-image">
+                        <div class="divine-glow"></div>
+                        <img src="images/mt-anointing-oil.jpg" alt="MT Anointing Oil Gift Set" class="product-main-img">
+                    </div>
+                </div>
+
+                <div class="product-details" data-aos="fade-left">
+                    <span class="product-label">Most Important Product</span>
+                    <h1 class="product-title">The MT Anointing Oil</h1>
+                    <p class="product-subtitle">Heaven's point of contact with you</p>
+
+                    <div class="product-price-box">
+                        <div class="price-wrapper">
+                            <span class="currency-label">Price:</span>
+                            <div class="price-options">
+                                <div class="price-option">
+                                    <span class="price-amount">$55.00</span>
+                                    <span class="price-currency">CAD</span>
+                                </div>
+                                <div class="price-divider">|</div>
+                                <div class="price-option">
+                                    <span class="price-amount">$55.00</span>
+                                    <span class="price-currency">USD</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="price-note">* USD price includes 35% tariff</p>
+                    </div>
+
+                    <div class="product-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">✝</span>
+                            <span>Biblical Spices: Frankincense & Myrrh</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🕊️</span>
+                            <span>A Heavenly Aroma Unlike Anything on Earth</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎁</span>
+                            <span>Beautiful Pump Bottle & Gift Box</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">💝</span>
+                            <span>In Honor of Myrtle L. Taylor-Walls</span>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-large" onclick="addToCart('mt-oil', 'MT Anointing Oil', 55.00)">
+                            Add to Cart - $55.00
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="9" cy="21" r="1"/>
+                                <circle cx="20" cy="21" r="1"/>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="quick-links">
+                        <a href="purposes.html" class="quick-link">View 6 Sacred Purposes →</a>
+                        <a href="scriptures.html" class="quick-link">Read Scripture Verses →</a>
+                        <a href="calm-your-mind.html" class="quick-link">How to Find Peace →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grammy's Story - Full -->
+    <section class="grammy-story-section">
+        <div class="container">
+            <div class="story-header" data-aos="fade-up">
+                <span class="section-label">A Legacy of Faith & Love</span>
+                <h2 class="section-title">
+                    In Honour of My Beloved Grandmother<br>
+                    <span class="gold-text">Myrtle L. Taylor-Walls</span>
+                </h2>
+            </div>
+
+            <div class="story-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="story-text-large">
+                    <p>
+                        This Anointing Oil is named in loving memory of my dearly beloved grandmother— 
+                        the woman who raised me from birth with grace, strength, and an unwavering faith in God.
+                    </p>
+                    <p>
+                        When my mother's illness made it difficult for her to care for me, Grammy lovingly stepped in, 
+                        becoming my guiding light, my teacher, and my example of what true, Godly love looks like.
+                    </p>
+                    <p>
+                        She poured into me everything she had—her wisdom, her prayers, her unconditional love, 
+                        and her deep reverence for the Lord. Grammy was a woman of profound faith, a prayer warrior 
+                        who taught me the power of trusting God in every season of life.
+                    </p>
+                    <p>
+                        Creating this Anointing Oil is my way of honoring her beautiful legacy and keeping her memory alive. 
+                        Just as she anointed me with love, prayers, and purpose, I hope this oil will bless and anoint you, 
+                        reminding you of the presence and goodness of God in your life.
+                    </p>
+                    <p class="story-signature">
+                        <em>— With all my love and gratitude, forever in my heart. ❤️</em>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unique Features -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header-center" data-aos="fade-up">
+                <span class="section-label">What Makes It Special</span>
+                <h2 class="section-title">
+                    Unique <span class="gold-text">Features</span>
+                </h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card-icon">📖</div>
+                    <h3>Biblical Spices</h3>
+                    <p>
+                        This premium Anointing Oil is made with sacred ingredients mentioned throughout Scripture. 
+                        Frankincense and Myrrh—two of the most precious gifts offered to Jesus—are at the heart of 
+                        this divine blend, connecting you to ancient biblical traditions.
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card-icon">✨</div>
+                    <h3>A Heavenly Aroma</h3>
+                    <p>
+                        Experience a fragrance like nothing you've encountered before. The captivating scent of this 
+                        oil is both soothing and uplifting, designed to remind you of God's presence and create a 
+                        sacred atmosphere wherever you are.
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card-icon">🎁</div>
+                    <h3>Beautiful Presentation</h3>
+                    <p>
+                        Packaged in an elegant pump bottle, this Anointing Oil arrives in a thoughtfully designed gift box. 
+                        It's perfect for personal use, as a meaningful gift, or as a symbol of blessing for your loved ones.
+                    </p>
+                </div>
+
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card-icon">💝</div>
+                    <h3>Made with Love</h3>
+                    <p>
+                        Every bottle is created with prayer, intention, and reverence. This oil is more than a product—
+                        it's a labor of love, crafted to honor Grammy's memory and to bless all who use it with 
+                        peace, protection, and divine favor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Year's Message -->
+    <section class="new-year-section">
+        <div class="container">
+            <div class="new-year-content" data-aos="zoom-in">
+                <div class="new-year-icon">🎊</div>
+                <h2 class="new-year-title">Start the New Year on the Right Foot</h2>
+                <p class="new-year-text">
+                    Begin 2026 with divine protection and blessing. Anoint your home, your children, 
+                    and your loved ones with the MT Anointing Oil every week. Create a sacred atmosphere 
+                    of peace, protection, and God's presence in your household.
+                </p>
+                <div class="new-year-benefits">
+                    <div class="benefit-item">✝ Weekly Blessing</div>
+                    <div class="benefit-item">🏠 Sanctify Your Home</div>
+                    <div class="benefit-item">👨‍👩‍👧‍👦 Protect Your Family</div>
+                    <div class="benefit-item">🙏 Divine Favor</div>
+                </div>
+                <button class="btn btn-primary btn-large" onclick="addToCart('mt-oil', 'MT Anointing Oil', 55.00)">
+                    Order Now for the New Year
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">Experience Heaven's Touch</h2>
+                <p class="cta-text">
+                    Order the MT Anointing Oil today and invite divine presence into your life.
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large" onclick="addToCart('mt-oil', 'MT Anointing Oil', 55.00)">
+                        Add to Cart - $55.00
+                    </button>
+                    <a href="calm-your-mind.html" class="btn btn-secondary btn-large">
+                        Learn How to Use
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart & Footer (same as homepage) -->
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <div class="empty-cart">
+                <div class="empty-icon">🛍️</div>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-full" onclick="checkout()">Proceed to Checkout</button>
+            <button class="btn btn-secondary btn-full" onclick="toggleCart()">Continue Shopping</button>
+        </div>
+    </div>
+    <div id="cartOverlay" class="cart-overlay" onclick="toggleCart()"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/logo.png" alt="The Oil Hill" class="footer-logo">
+                    <p class="footer-tagline">Heaven's point of contact with you</p>
+                    <p class="footer-text">Sacred products crafted with love, faith, and divine inspiration.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="mt-anointing-oil.html">MT Anointing Oil</a></li>
+                        <li><a href="all-products.html">All Products</a></li>
+                        <li><a href="calm-your-mind.html">How to Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Spiritual</h4>
+                    <ul class="footer-links">
+                        <li><a href="purposes.html">Purposes</a></li>
+                        <li><a href="scriptures.html">Scriptures</a></li>
+                        <li><a href="calm-your-mind.html">Find Peace</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                    </div>
+                    <div class="contact-info">
+                        <p>Email: info@theoilhill.com</p>
+                        <p>Phone: (XXX) XXX-XXXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Oil Hill. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/oil-hill-v2.js"></script>
+</body>
+</html>

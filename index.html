@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Oil Hill - MT Anointing Oil | Heaven's Point of Contact With You</title>
+    <meta name="description" content="The MT Anointing Oil - In honor of Myrtle L. Taylor-Walls. Biblical spices, Frankincense & Myrrh. Heaven's point of contact with you.">
+
+    <!-- Fonts - Biblical/Ancient Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/oil-hill-v2.css">
+</head>
+<body>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo-circle.png.png" alt="The Oil Hill" class="logo-img">
+                <div class="logo-text-wrapper">
+                    <span class="logo-title">THE OIL HILL</span>
+                    <span class="logo-tagline">Heaven's point of contact with you</span>
+                </div>
+            </a>
+
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="mt-anointing-oil.html" class="nav-link">MT Anointing Oil</a>
+                <a href="purposes.html" class="nav-link">Purposes</a>
+                <a href="scriptures.html" class="nav-link">Scriptures</a>
+                <a href="calm-your-mind.html" class="nav-link">Calm Your Mind</a>
+                <a href="all-products.html" class="nav-link">All Products</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="nav-btn cart-btn" onclick="toggleCart()">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"/>
+                        <circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                <button class="hamburger" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="ancient-bg-pattern"></div>
+
+        <div class="hero-content-wrapper">
+            <div class="container">
+                <div class="hero-grid">
+                    <!-- Left: Product -->
+                    <div class="hero-product-side" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="product-showcase">
+                            <div class="divine-glow"></div>
+                            <img src="images/mt-anointing-oil.jpg.png" alt="MT Anointing Oil Gift Set" class="hero-product-img">
+                            <div class="product-badge-hero">
+                                <span class="badge-icon">✝</span>
+                                <span>MOST IMPORTANT PRODUCT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Text -->
+                    <div class="hero-text-side" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="hero-label">In Loving Memory</div>
+
+                        <h1 class="hero-title">
+                            THE MT<br>
+                            <span class="gold-text">ANOINTING OIL</span>
+                        </h1>
+
+                        <p class="hero-subtitle">
+                            In Honour of My Beloved Grandmother<br>
+                            <strong>Myrtle L. Taylor-Walls</strong>
+                        </p>
+
+                        <div class="hero-tagline">
+                            <em>"Heaven's point of contact with you"</em>
+                        </div>
+
+                        <div class="hero-features">
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                                <div class="feature-icon">🕊️</div>
+                                <span>Biblical Spices: Frankincense & Myrrh</span>
+                            </div>
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                                <div class="feature-icon">✨</div>
+                                <span>A Heavenly Aroma Unlike Anything on Earth</span>
+                            </div>
+                            <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                                <div class="feature-icon">🎁</div>
+                                <span>Beautiful Pump Bottle & Gift Box</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-scripture" data-aos="fade-up" data-aos-delay="700">
+                            <p class="scripture-text">
+                                "And if God is for you, who can be against you?"
+                            </p>
+                            <cite>— Romans 8:31-39</cite>
+                        </div>
+
+                        <div class="hero-cta" data-aos="fade-up" data-aos-delay="800">
+                            <a href="mt-anointing-oil.html" class="btn btn-primary">
+                                Learn About MT Oil
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <button class="btn btn-secondary" onclick="addToCart('mt-oil', 'MT Anointing Oil', 55.00)">
+                                Add to Cart - $55.00
+                            </button>
+                        </div>
+
+                        <!-- New Year's Message -->
+                        <div class="new-year-message" data-aos="fade-up" data-aos-delay="900">
+                            <div class="message-icon">🎊</div>
+                            <div class="message-text">
+                                <strong>Start the New Year Right!</strong>
+                                <p>Anoint your home, children, and loved ones for divine protection every week.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" data-aos="fade-in" data-aos-delay="1500">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Discover More</span>
+        </div>
+    </section>
+
+    <!-- QUICK HIGHLIGHTS SECTION -->
+    <section class="highlights-section">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlight-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="highlight-icon">📖</div>
+                    <h3>Biblical Heritage</h3>
+                    <p>Ancient spices from Scripture - Frankincense and Myrrh</p>
+                    <a href="mt-anointing-oil.html" class="highlight-link">Discover the Story →</a>
+                </div>
+
+                <div class="highlight-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="highlight-icon">🙏</div>
+                    <h3>6 Sacred Purposes</h3>
+                    <p>Prayer, protection, sanctification, healing & more</p>
+                    <a href="purposes.html" class="highlight-link">View Purposes →</a>
+                </div>
+
+                <div class="highlight-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="highlight-icon">🕊️</div>
+                    <h3>Find Peace</h3>
+                    <p>Calm your worried, busy, or troubled mind</p>
+                    <a href="calm-your-mind.html" class="highlight-link">Learn How →</a>
+                </div>
+
+                <div class="highlight-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="highlight-icon">📜</div>
+                    <h3>Scripture Verses</h3>
+                    <p>1 Peter 2:9, 2 Corinthians 1:20-22, Revelation 1:5-6</p>
+                    <a href="scriptures.html" class="highlight-link">Read Scriptures →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GRANDMOTHER STORY PREVIEW -->
+    <section class="story-preview-section">
+        <div class="container">
+            <div class="story-preview-grid">
+                <div class="story-image" data-aos="fade-right">
+                    <div class="image-frame">
+                        <div class="frame-decoration"></div>
+                        <img src="images/myrtle-taylor.jpg" alt="Myrtle L. Taylor-Walls" class="grandmother-img">
+                    </div>
+                </div>
+
+                <div class="story-text" data-aos="fade-left">
+                    <span class="section-label">A Legacy of Faith</span>
+                    <h2 class="section-title">
+                        In Honour of<br>
+                        <span class="gold-text">Myrtle L. Taylor-Walls</span>
+                    </h2>
+
+                    <div class="story-excerpt">
+                        <p>
+                            This Anointing Oil is named in loving memory of my dearly beloved grandmother— 
+                            the woman who raised me from birth with grace, strength, and an unwavering faith in God.
+                        </p>
+                        <p>
+                            When my mother's illness made it difficult for her to care for me, Grammy lovingly stepped in, 
+                            becoming my guiding light, my teacher, and my example of what true, Godly love looks like.
+                        </p>
+                    </div>
+
+                    <a href="mt-anointing-oil.html" class="btn btn-primary">
+                        Read Full Story
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OTHER PRODUCTS - COMING SOON -->
+    <section class="other-products-section">
+        <div class="container">
+            <div class="section-header-center" data-aos="fade-up">
+                <span class="section-label">More Products</span>
+                <h2 class="section-title">
+                    Stay Young<br>
+                    <span class="gold-text">Cosmetics</span>
+                </h2>
+                <p class="section-description">Additional products coming soon</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Facial Serum - Coming Soon -->
+                <div class="product-card coming-soon" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-img-wrapper">
+                        <img src="images/facial-serum.jpg" alt="Radiant Youth Facial Serum" class="product-img">
+                        <div class="coming-soon-overlay">
+                            <span class="coming-soon-badge">COMING SOON</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">For Women of Colour</div>
+                        <h3 class="product-name">Radiant Youth Facial Serum</h3>
+                        <p class="product-description">
+                            A luminous elixir designed to celebrate melanin-rich skin.
+                        </p>
+                        <div class="notify-form">
+                            <input type="email" placeholder="Email to be notified" class="notify-input">
+                            <button class="btn btn-notify">Notify Me</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hair Oil - Coming Soon -->
+                <div class="product-card coming-soon" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-img-wrapper">
+                        <img src="images/hair-oil.jpg" alt="Eternal Nourish Hair Oil" class="product-img">
+                        <div class="coming-soon-overlay">
+                            <span class="coming-soon-badge">COMING SOON</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Hair Care</div>
+                        <h3 class="product-name">Eternal Nourish Hair Oil</h3>
+                        <p class="product-description">
+                            100% natural ingredients. Transform your hair from roots to tip.
+                        </p>
+                        <div class="notify-form">
+                            <input type="email" placeholder="Email to be notified" class="notify-input">
+                            <button class="btn btn-notify">Notify Me</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">Ready to Experience Divine Peace?</h2>
+                <p class="cta-text">
+                    Order the MT Anointing Oil today and begin your journey to spiritual tranquility.
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large" onclick="addToCart('mt-oil', 'MT Anointing Oil', 55.00)">
+                        Order Now - $55.00
+                    </button>
+                    <a href="mt-anointing-oil.html" class="btn btn-secondary btn-large">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" onclick="toggleCart()">×</button>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <div class="empty-cart">
+                <div class="empty-icon">🛍️</div>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-full" onclick="checkout()">
+                Proceed to Checkout
+            </button>
+            <button class="btn btn-secondary btn-full" onclick="toggleCart()">Continue Shopping</button>
+        </div>
+    </div>
+    <div id="cartOverlay" class="cart-overlay" onclick="toggleCart()"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/logo.png" alt="The Oil Hill" class="footer-logo">
+                    <p class="footer-tagline">Heaven's point of contact with you</p>
+                    <p class="footer-text">
+                        Sacred products crafted with love, faith, and divine inspiration.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="mt-anointing-oil.html">MT Anointing Oil</a></li>
+                        <li><a href="all-products.html">All Products</a></li>
+                        <li><a href="calm-your-mind.html">How to Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Spiritual</h4>
+                    <ul class="footer-links">
+                        <li><a href="purposes.html">Purposes</a></li>
+                        <li><a href="scriptures.html">Scriptures</a></li>
+                        <li><a href="calm-your-mind.html">Find Peace</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                    </div>
+                    <div class="contact-info">
+                        <p>Email: info@theoilhill.com</p>
+                        <p>Phone: (XXX) XXX-XXXX</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Oil Hill. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/oil-hill-v2.js"></script>
+</body>
+</html>
